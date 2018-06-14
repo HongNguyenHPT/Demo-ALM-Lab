@@ -47,5 +47,6 @@ WpfWindow("HPE MyFlight Sample Applicatio").WpfButton("SEARCH").Click
 'WpfWindow("HPE MyFlight Sample Applicatio").WpfEdit("passengerName").Check CheckPoint("passengerName")
 
 '---Close
-WpfWindow("HPE MyFlight Sample Applicatio").Close
+'WpfWindow("HPE MyFlight Sample Applicatio").Close
 
+WpfWindow("HPE MyFlight Sample Applicatio").Close @@ hightlight id_;_529624_;_script infofile_;_ZIP::ssf1.xml_;_
