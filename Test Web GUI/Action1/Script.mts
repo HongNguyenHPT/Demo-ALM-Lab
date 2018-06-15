@@ -6,3 +6,4 @@ Browser("Welcome: Mercury Tours").Page("Sign-on: Mercury Tours").WebEdit("passwo
 Browser("Welcome: Mercury Tours").Page("Sign-on: Mercury Tours").Image("Login").Click 5,5 @@ hightlight id_;_Browser("Welcome: Mercury Tours").Page("Sign-on: Mercury Tours").Image("Login")_;_script infofile_;_ZIP::ssf6.xml_;_
 Browser("Welcome: Mercury Tours").Page("Sign-on: Mercury Tours").Sync @@ hightlight id_;_Browser("Welcome: Mercury Tours").Page("Sign-on: Mercury Tours")_;_script infofile_;_ZIP::ssf7.xml_;_
 Browser("Welcome: Mercury Tours").CloseAllTabs
+

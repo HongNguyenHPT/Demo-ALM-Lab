@@ -134,7 +134,7 @@
 <DName><![CDATA[Test Web GUI]]></DName>
 <Res><![CDATA[Test Web GUI]]></Res>
 <DT rID="T2">
-<NodeArgs eType="Table" icon="2" nRep="4" filter="False" >
+<NodeArgs eType="Table" icon="10" nRep="4" filter="False" >
 <Disp><![CDATA[Run-Time Data Table]]></Disp>
 <BtmPane vType="Table" >
 <Path><![CDATA[Default.xls]]></Path>
@@ -147,113 +147,113 @@
 <Step rID="T5">
 <Obj plainTxt="False" ><![CDATA[Welcome: Mercury Tours]]></Obj>
 <Details plainTxt="False" ><![CDATA[<table><tr><td><span style="text-align : left; font-size : 12px; ">Local Browser</span></td></tr></table>]]></Details>
-<Time><![CDATA[6/14/2018 - 10:15:17]]></Time>
-<TimeTick>1528946117</TimeTick>
+<Time><![CDATA[6/14/2018 - 10:43:57]]></Time>
+<TimeTick>1528947837</TimeTick>
 <Step rID="T6">
 <Obj plainTxt="False" ><![CDATA[Welcome: Mercury Tours]]></Obj>
 <Details plainTxt="False" ><![CDATA[Page]]></Details>
-<Time><![CDATA[6/14/2018 - 10:15:17]]></Time>
-<TimeTick>1528946117</TimeTick>
+<Time><![CDATA[6/14/2018 - 10:43:57]]></Time>
+<TimeTick>1528947837</TimeTick>
 <Step rID="T7">
 <Obj plainTxt="False" ><![CDATA[userName.Set]]></Obj>
 <Details plainTxt="False" ><![CDATA["hong"]]></Details>
-<Time><![CDATA[6/14/2018 - 10:15:17]]></Time>
-<TimeTick>1528946117</TimeTick>
-<NodeArgs eType="Replay" icon="7" nRep="12" Source="Action1" SourceLine="-1" >
+<Time><![CDATA[6/14/2018 - 10:43:57]]></Time>
+<TimeTick>1528947837</TimeTick>
+<NodeArgs eType="Replay" icon="15" nRep="12" Source="Action1" SourceLine="-1" >
 <Disp><![CDATA[userName.Set]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T8">
 <Obj plainTxt="False" ><![CDATA[password.SetSecure]]></Obj>
 <Details plainTxt="False" ><![CDATA["5b209229c674ccb69d0c9256"]]></Details>
-<Time><![CDATA[6/14/2018 - 10:15:17]]></Time>
-<TimeTick>1528946117</TimeTick>
-<NodeArgs eType="Replay" icon="7" nRep="15" Source="Action1" SourceLine="-1" >
+<Time><![CDATA[6/14/2018 - 10:43:57]]></Time>
+<TimeTick>1528947837</TimeTick>
+<NodeArgs eType="Replay" icon="15" nRep="15" Source="Action1" SourceLine="-1" >
 <Disp><![CDATA[password.SetSecure]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T9">
 <Obj plainTxt="False" ><![CDATA[Sign-In.Click]]></Obj>
 <Details plainTxt="False" ><![CDATA[]]></Details>
-<Time><![CDATA[6/14/2018 - 10:15:17]]></Time>
-<TimeTick>1528946117</TimeTick>
-<NodeArgs eType="Replay" icon="8" nRep="18" Source="Action1" SourceLine="-1" >
+<Time><![CDATA[6/14/2018 - 10:43:58]]></Time>
+<TimeTick>1528947838</TimeTick>
+<NodeArgs eType="Replay" icon="16" nRep="18" Source="Action1" SourceLine="-1" >
 <Disp><![CDATA[Sign-In.Click]]></Disp>
 </NodeArgs>
 </Step>
-<NodeArgs eType="Context" icon="6" nRep="11" Source="Action1" SourceLine="-1" >
+<NodeArgs eType="Context" icon="14" nRep="11" Source="Action1" SourceLine="-1" >
 <Disp><![CDATA[Welcome: Mercury Tours]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T10">
 <Obj plainTxt="False" ><![CDATA[Sign-on: Mercury Tours]]></Obj>
 <Details plainTxt="False" ><![CDATA[Page]]></Details>
-<Time><![CDATA[6/14/2018 - 10:15:19]]></Time>
-<TimeTick>1528946119</TimeTick>
+<Time><![CDATA[6/14/2018 - 10:43:59]]></Time>
+<TimeTick>1528947839</TimeTick>
 <Step rID="T11">
 <Obj plainTxt="False" ><![CDATA[userName.Set]]></Obj>
 <Details plainTxt="False" ><![CDATA["123"]]></Details>
-<Time><![CDATA[6/14/2018 - 10:15:19]]></Time>
-<TimeTick>1528946119</TimeTick>
-<NodeArgs eType="Replay" icon="7" nRep="22" Source="Action1" SourceLine="-1" >
+<Time><![CDATA[6/14/2018 - 10:43:59]]></Time>
+<TimeTick>1528947839</TimeTick>
+<NodeArgs eType="Replay" icon="15" nRep="22" Source="Action1" SourceLine="-1" >
 <Disp><![CDATA[userName.Set]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T12">
 <Obj plainTxt="False" ><![CDATA[password.SetSecure]]></Obj>
 <Details plainTxt="False" ><![CDATA["5b20923078ca1717f0bbab7d"]]></Details>
-<Time><![CDATA[6/14/2018 - 10:15:19]]></Time>
-<TimeTick>1528946119</TimeTick>
-<NodeArgs eType="Replay" icon="7" nRep="25" Source="Action1" SourceLine="-1" >
+<Time><![CDATA[6/14/2018 - 10:43:59]]></Time>
+<TimeTick>1528947839</TimeTick>
+<NodeArgs eType="Replay" icon="15" nRep="25" Source="Action1" SourceLine="-1" >
 <Disp><![CDATA[password.SetSecure]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T13">
 <Obj plainTxt="False" ><![CDATA[Login.Click]]></Obj>
 <Details plainTxt="False" ><![CDATA[]]></Details>
-<Time><![CDATA[6/14/2018 - 10:15:19]]></Time>
-<TimeTick>1528946119</TimeTick>
-<NodeArgs eType="Replay" icon="8" nRep="28" Source="Action1" SourceLine="-1" >
+<Time><![CDATA[6/14/2018 - 10:43:59]]></Time>
+<TimeTick>1528947839</TimeTick>
+<NodeArgs eType="Replay" icon="16" nRep="28" Source="Action1" SourceLine="-1" >
 <Disp><![CDATA[Login.Click]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T14">
 <Obj plainTxt="False" ><![CDATA[Sign-on: Mercury Tours.Sync]]></Obj>
 <Details plainTxt="False" ><![CDATA[]]></Details>
-<Time><![CDATA[6/14/2018 - 10:15:21]]></Time>
-<TimeTick>1528946121</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="31" Source="Action1" SourceLine="-1" >
+<Time><![CDATA[6/14/2018 - 10:44:00]]></Time>
+<TimeTick>1528947840</TimeTick>
+<NodeArgs eType="Replay" icon="14" nRep="31" Source="Action1" SourceLine="-1" >
 <Disp><![CDATA[Sign-on: Mercury Tours.Sync]]></Disp>
 </NodeArgs>
 </Step>
-<NodeArgs eType="Context" icon="6" nRep="21" Source="Action1" SourceLine="-1" >
+<NodeArgs eType="Context" icon="14" nRep="21" Source="Action1" SourceLine="-1" >
 <Disp><![CDATA[Sign-on: Mercury Tours]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T15">
 <Obj plainTxt="False" ><![CDATA[Welcome: Mercury Tours.Close All Tabs]]></Obj>
 <Details plainTxt="False" ><![CDATA[]]></Details>
-<Time><![CDATA[6/14/2018 - 10:15:21]]></Time>
-<TimeTick>1528946121</TimeTick>
-<NodeArgs eType="Replay" icon="5" nRep="32" Source="Action1" SourceLine="-1" >
+<Time><![CDATA[6/14/2018 - 10:44:00]]></Time>
+<TimeTick>1528947840</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="32" Source="Action1" SourceLine="-1" >
 <Disp><![CDATA[Welcome: Mercury Tours.Close All Tabs]]></Disp>
 </NodeArgs>
 </Step>
-<NodeArgs eType="Context" icon="5" nRep="10" Source="Action1" SourceLine="-1" >
+<NodeArgs eType="Context" icon="13" nRep="10" Source="Action1" SourceLine="-1" >
 <Disp><![CDATA[Welcome: Mercury Tours]]></Disp>
 </NodeArgs>
 </Step>
-<Summary sTime="6/14/2018 - 10:15:16" eTime="6/14/2018 - 10:15:21" passed="0" failed="0" warnings="0" ></Summary>
-<NodeArgs eType="StartAction" icon="4" nRep="7" >
+<Summary sTime="6/14/2018 - 10:43:57" eTime="6/14/2018 - 10:44:01" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="12" nRep="7" >
 <Disp><![CDATA[Action1 Summary]]></Disp>
 </NodeArgs>
 </Action>
-<NodeArgs eType="StartIteration" icon="3" nRep="6" >
+<NodeArgs eType="StartIteration" icon="11" nRep="6" >
 <Disp><![CDATA[Test Web GUI Iteration 1 (Row 1)]]></Disp>
 </NodeArgs>
 </DIter>
-<Summary sTime="6/14/2018 - 10:15:12" eTime="6/14/2018 - 10:15:21" passed="0" failed="0" warnings="0" ></Summary>
-<NodeArgs eType="StartTest" icon="1" nRep="3" >
+<Summary sTime="6/14/2018 - 10:43:53" eTime="6/14/2018 - 10:44:01" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartTest" icon="9" nRep="3" >
 <Disp><![CDATA[Test Test Web GUI Summary]]></Disp>
 </NodeArgs>
 </Doc>
