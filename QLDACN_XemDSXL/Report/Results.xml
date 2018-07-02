@@ -1,0 +1,358 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Report
+[
+<!ELEMENT Report (General ,(Doc|BPT)) >
+<!ATTLIST Report ver CDATA #REQUIRED tmZone CDATA #REQUIRED>
+
+<!ELEMENT General ( DocLocation ) >
+<!ATTLIST General productName CDATA #REQUIRED productVer CDATA #REQUIRED os CDATA #REQUIRED host CDATA #REQUIRED qcserver CDATA #IMPLIED qcproject CDATA #IMPLIED SolManSolutionId CDATA #IMPLIED SolManProjectId CDATA #IMPLIED SolManTestPlanId CDATA #IMPLIED SolManTestPackageId CDATA #IMPLIED SolManUserInfoData CDATA #IMPLIED  >
+
+<!ELEMENT BPT (DName,Res,DVer?,TSet?,TInst?,NodeArgs,AdditionalInfo*,Doc*) >
+<!ATTLIST BPT rID ID #REQUIRED >
+
+<!ELEMENT Doc (DName,ConfName?,Res,DVer?,TSet?,TInst?,RunType?,DT?,AdditionalInfo*,Step*,DIter*,Step*,Action*,Doc*,Summary?,TestMaintenanceSummary*,NodeArgs?) >
+<!ATTLIST Doc rID ID #REQUIRED type (Test|BC|BPTWrapperTest|Flow|Group|Action) "Test" productName CDATA #REQUIRED BCIter CDATA #IMPLIED >
+
+<!ELEMENT RunType ( #PCDATA )>
+<!ATTLIST RunType fmStep (False|True) "False" batch (False|True) "False" upDesc (False|True) "False" upChk (False|True) "False" upAS (False|True) "False">
+
+<!ELEMENT DName ( #PCDATA ) >
+
+<!ELEMENT ConfName ( #PCDATA ) >
+
+<!ELEMENT Res ( #PCDATA ) >
+
+<!ELEMENT AdditionalInfo (AdditionalDataName,AdditionalDataValue ) >
+
+<!ELEMENT AdditionalDataName ( #PCDATA ) >
+
+<!ELEMENT AdditionalDataValue ( #PCDATA ) >
+
+<!ELEMENT DVer ( #PCDATA ) >
+
+<!ELEMENT TSet ( #PCDATA ) >
+
+<!ELEMENT TInst ( #PCDATA ) >
+
+<!ELEMENT DIter (Step*,Action+,Summary?,NodeArgs)>
+<!ATTLIST DIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT DocLocation ( #PCDATA )>
+
+<!ELEMENT Action (AName,AIter*,(Step|HtmlStep|Action)*, Summary,ActionMaintenanceSummary*, NodeArgs ) >
+<!ATTLIST Action rID ID #REQUIRED>
+
+<!ELEMENT AIter ((Step|HtmlStep|Action)*,DataMapping?, Summary?,NodeArgs) >
+<!ATTLIST AIter rID ID #REQUIRED iterID CDATA #REQUIRED isCountable (False|True) "False" >
+
+<!ELEMENT AName ( #PCDATA ) >
+
+<!ELEMENT TestMaintenanceSummary (ActionMaintenanceSummary*) >
+<!ATTLIST TestMaintenanceSummary ObjectsAdded CDATA #REQUIRED ObjectsUpdated CDATA #REQUIRED StepsUpdated CDATA #REQUIRED StepsComments CDATA #REQUIRED><!ELEMENT ActionMaintenanceSummary (ObjectChange* ) >
+<!ATTLIST ActionMaintenanceSummary Action CDATA #REQUIRED Objects CDATA #REQUIRED Updated CDATA #REQUIRED LinesTotal CDATA #REQUIRED Added CDATA #REQUIRED LinesUpdated CDATA #REQUIRED>
+
+<!ELEMENT ObjectChange  (Hierarchy, PropertyChangeList* ) >
+<!ATTLIST ObjectChange Operation CDATA #IMPLIED OriginalRepository CDATA #IMPLIED>
+
+<!ELEMENT PropertyChangeList (PropertyDef*) >
+
+<!ELEMENT PropertyDef (OriginalValue, NewValue) >
+<!ATTLIST PropertyDef PropName CDATA #REQUIRED OriginRegularExpression (True|False) "False" NewRegularExpression (True|False) "False" AddedProperty (True|False) "False" >
+
+<!ELEMENT OriginalValue ( #PCDATA )>
+
+<!ELEMENT NewValue ( #PCDATA )>
+
+<!ELEMENT Hierarchy  (ObjectName, Hierarchy*) >
+<!ATTLIST Hierarchy MicClass CDATA #REQUIRED>
+
+<!ELEMENT ObjectName  ( #PCDATA ) >
+
+<!ELEMENT Step (Obj,Details,Time,TimeTick* ,(Step|HtmlStep|Doc)*, DataMapping?, NodeArgs) >
+<!ATTLIST Step rID ID #REQUIRED retval CDATA #IMPLIED>
+
+<!ELEMENT HtmlStep (HTML,TimeTick*,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST HtmlStep rID ID #REQUIRED >
+
+<!ELEMENT Obj ( #PCDATA ) >
+<!ATTLIST Obj plainTxt (False|True) "True">
+
+<!ELEMENT Details ( #PCDATA ) >
+<!ATTLIST Details plainTxt (False|True) "True">
+
+<!ELEMENT Time ( #PCDATA ) >
+
+<!ELEMENT HTML ( #PCDATA ) >
+
+<!ELEMENT Disp ( #PCDATA ) >
+
+<!ELEMENT TimeTick ( #PCDATA ) >
+
+<!ELEMENT DataMapping ( DataMappedItem* )>
+<!ELEMENT DataMappedItem EMPTY >
+<!ATTLIST DataMappedItem dsName CDATA #REQUIRED >
+<!ATTLIST DataMappedItem rowId CDATA #REQUIRED >
+
+<!ELEMENT NodeArgs (Disp,TopPane?,BtmPane?,ExtendedInfo? )>
+<!ATTLIST NodeArgs eType CDATA #REQUIRED icon CDATA #REQUIRED nRep CDATA #REQUIRED UserNote CDATA #IMPLIED filter (False|True) "True">
+<!ATTLIST NodeArgs status (Passed|Failed|Done|Warning|Information) "Done">
+<!ATTLIST NodeArgs iconSel CDATA #IMPLIED nType CDATA #IMPLIED MovieMarker CDATA "">
+<!ATTLIST NodeArgs Source CDATA #IMPLIED SourceLine CDATA #IMPLIED StepFlowItemKey CDATA #IMPLIED >
+
+<!ELEMENT TopPane (Path)>
+
+<!ELEMENT BtmPane ( (Path|WR)?,ASHilite?)>
+<!ATTLIST BtmPane vType CDATA "HTML">
+
+<!ELEMENT Path ( #PCDATA ) >
+
+<!ELEMENT ASHilite ( #PCDATA ) >
+
+<!ELEMENT WR ( #PCDATA ) >
+
+<!ELEMENT ExtendedInfo ( StepData ) >
+
+<!ATTLIST ExtendedInfo StepType CDATA #REQUIRED>
+<!ELEMENT DT (NodeArgs) >
+<!ATTLIST DT rID ID #REQUIRED>
+
+<!ELEMENT Summary (Param*)>
+<!ATTLIST Summary sTime CDATA #IMPLIED eTime CDATA #IMPLIED passed CDATA #IMPLIED failed CDATA #IMPLIED warnings CDATA #IMPLIED retval CDATA #IMPLIED stopped (False|True) "False" >
+
+<!ELEMENT Param (ParamName,ParamVal)+ >
+<!ATTLIST Param paramInOut (In|Out) "In">
+
+<!ELEMENT ParamName ( #PCDATA ) >
+
+<!ELEMENT ParamVal ( #PCDATA ) >
+
+]
+>
+<Report ver="2.0" tmZone="SE Asia Standard Time">
+<General productName="HPE Unified Functional Testing" productVer="14.0" os="" host="HONGNT-PC"><DocLocation><![CDATA[D:\Demo ALM Octane Lab\TestScript\QLDACN_XemDSXL]]></DocLocation></General>
+<Doc rID="T1"   productName= "HPE Unified Functional Testing"  >
+<DName><![CDATA[QLDACN_XemDSXL]]></DName>
+<Res><![CDATA[QLDACN_XemDSXL]]></Res>
+<DT rID="T2">
+<NodeArgs eType="Table" icon="2" nRep="4" filter="False" >
+<Disp><![CDATA[Run-Time Data Table]]></Disp>
+<BtmPane vType="Table" >
+<Path><![CDATA[Default.xls]]></Path>
+</BtmPane>
+</NodeArgs>
+</DT>
+<DIter rID="T3" iterID="1" >
+<Action rID="T4">
+<AName><![CDATA[Action1]]></AName>
+<Step rID="T5">
+<Obj plainTxt="False" ><![CDATA[HPE Service Manager: Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[<table><tr><td><span style="text-align : left; font-size : 12px; ">Local Browser</span></td></tr></table>]]></Details>
+<Time><![CDATA[7/2/2018 - 15:07:50]]></Time>
+<TimeTick>1530518870</TimeTick>
+<Step rID="T6">
+<Obj plainTxt="False" ><![CDATA["HPE Service Manager: Login"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (68 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (68 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=HPE Service Manager: Login<SPAN class=passed> (Used</SPAN>, 2 matches)</SPAN><br>title=HPE Service Manager: Login - Internet Explorer<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>openurl=http://10.4.18.8:8081/smvcb/ess.do<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=HPE Service Manager: Login<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=1<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[7/2/2018 - 15:07:50]]></Time>
+<TimeTick>1530518870</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="10" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["HPE Service Manager: Login"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T7">
+<Obj plainTxt="False" ><![CDATA[HPE Service Manager: Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[7/2/2018 - 15:07:50]]></Time>
+<TimeTick>1530518870</TimeTick>
+<Step rID="T8">
+<Obj plainTxt="False" ><![CDATA[Username.Set]]></Obj>
+<Details plainTxt="False" ><![CDATA["Leader2"]]></Details>
+<Time><![CDATA[7/2/2018 - 15:07:50]]></Time>
+<TimeTick>1530518870</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="13" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Username.Set]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T9">
+<Obj plainTxt="False" ><![CDATA[Password.SetSecure]]></Obj>
+<Details plainTxt="False" ><![CDATA["5b39db4bb4b225925114c5dfd9751aacd937015a55f0"]]></Details>
+<Time><![CDATA[7/2/2018 - 15:07:50]]></Time>
+<TimeTick>1530518870</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="16" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Password.SetSecure]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T10">
+<Obj plainTxt="False" ><![CDATA[Log In.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[7/2/2018 - 15:07:50]]></Time>
+<TimeTick>1530518870</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="19" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Log In.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="7" nRep="12" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[HPE Service Manager: Login]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="9" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[HPE Service Manager: Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T11">
+<Obj plainTxt="False" ><![CDATA[HPE Service Manager]]></Obj>
+<Details plainTxt="False" ><![CDATA[<table><tr><td><span style="text-align : left; font-size : 12px; ">Local Browser</span></td></tr></table>]]></Details>
+<Time><![CDATA[7/2/2018 - 15:08:11]]></Time>
+<TimeTick>1530518891</TimeTick>
+<Step rID="T12">
+<Obj plainTxt="False" ><![CDATA["HPE Service Manager"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (69 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (69 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=HPE Service Manager<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=HPE Service Manager - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://10.4.18.8:8081/smvcb/ess.do<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=HPE Service Manager<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[7/2/2018 - 15:08:11]]></Time>
+<TimeTick>1530518891</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="22" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["HPE Service Manager"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T13">
+<Obj plainTxt="False" ><![CDATA[HPE Service Manager]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[7/2/2018 - 15:08:11]]></Time>
+<TimeTick>1530518891</TimeTick>
+<Step rID="T14">
+<Obj plainTxt="False" ><![CDATA[ext-gen-top119.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[7/2/2018 - 15:08:11]]></Time>
+<TimeTick>1530518891</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="25" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[ext-gen-top119.Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T15">
+<Obj plainTxt="False" ><![CDATA[Hỗ Trợ Xử Lý Các Yêu Cầu.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[7/2/2018 - 15:08:11]]></Time>
+<TimeTick>1530518891</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="28" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Hỗ Trợ Xử Lý Các Yêu Cầu.Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T16">
+<Obj plainTxt="False" ><![CDATA[Các Yêu Cầu Đang Xử Lý.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[7/2/2018 - 15:08:12]]></Time>
+<TimeTick>1530518892</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="31" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Các Yêu Cầu Đang Xử Lý.Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T17">
+<Obj plainTxt="False" ><![CDATA[mif-comp-ext-gen-top50-86752]]></Obj>
+<Details plainTxt="False" ><![CDATA[Frame]]></Details>
+<Time><![CDATA[7/2/2018 - 15:08:34]]></Time>
+<TimeTick>1530518914</TimeTick>
+<Step rID="T18">
+<Obj plainTxt="False" ><![CDATA["mif-comp-ext-gen-top50-86752"- Description mismatch]]></Obj>
+<Details plainTxt="False" ><![CDATA[The object was not found using the test object description. Check the object's properties.]]></Details>
+<Time><![CDATA[7/2/2018 - 15:08:34]]></Time>
+<TimeTick>1530518914</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="75" status="Warning" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["mif-comp-ext-gen-top50-86752"- Description mismatch]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T19">
+<Obj plainTxt="False" ><![CDATA["mif-comp-ext-gen-top50-86752"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not found.</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>name=mif-comp-ext-gen-top50-86752<br>micclass=Frame<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (3 objects found)&nbsp;</FONT></u><br>
+micclass=Frame<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=mif-comp-ext-gen-top50-86752<SPAN class=Failed> (Skipped)</SPAN><br>title=HPE Service Manager<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>url=http://10.4.18.8:8081/smvcb/list.do?thread=1<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[7/2/2018 - 15:08:34]]></Time>
+<TimeTick>1530518914</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="76" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["mif-comp-ext-gen-top50-86752"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T20">
+<Obj plainTxt="False" ><![CDATA[S180702-1234.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[7/2/2018 - 15:08:34]]></Time>
+<TimeTick>1530518914</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="77" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[S180702-1234.Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T21">
+<Obj plainTxt="False" ><![CDATA["mif-comp-ext-gen-top50-86752"- Description mismatch]]></Obj>
+<Details plainTxt="False" ><![CDATA[The object was not found using the test object description. Check the object's properties.]]></Details>
+<Time><![CDATA[7/2/2018 - 15:08:54]]></Time>
+<TimeTick>1530518934</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="120" status="Warning" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["mif-comp-ext-gen-top50-86752"- Description mismatch]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T22">
+<Obj plainTxt="False" ><![CDATA["mif-comp-ext-gen-top50-86752"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not found.</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>name=mif-comp-ext-gen-top50-86752<br>micclass=Frame<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (3 objects found)&nbsp;</FONT></u><br>
+micclass=Frame<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=mif-comp-ext-gen-top50-86752<SPAN class=Failed> (Skipped)</SPAN><br>title=HPE Service Manager<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>url=http://10.4.18.8:8081/smvcb/list.do?thread=1<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[7/2/2018 - 15:08:54]]></Time>
+<TimeTick>1530518934</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="121" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["mif-comp-ext-gen-top50-86752"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T23">
+<Obj plainTxt="False" ><![CDATA[Thoát Ra.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[7/2/2018 - 15:08:54]]></Time>
+<TimeTick>1530518934</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="122" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Thoát Ra.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="12" nRep="74" status="Warning" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[mif-comp-ext-gen-top50-86752]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T24">
+<Obj plainTxt="False" ><![CDATA[HPE Service Manager.Sync]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[7/2/2018 - 15:08:55]]></Time>
+<TimeTick>1530518935</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="125" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[HPE Service Manager.Sync]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="7" nRep="24" status="Warning" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[HPE Service Manager]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T25">
+<Obj plainTxt="False" ><![CDATA[HPE Service Manager.Close All Tabs]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[7/2/2018 - 15:08:55]]></Time>
+<TimeTick>1530518935</TimeTick>
+<NodeArgs eType="Replay" icon="5" nRep="126" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[HPE Service Manager.Close All Tabs]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="21" status="Warning" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[HPE Service Manager]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="7/2/2018 - 15:07:29" eTime="7/2/2018 - 15:08:56" passed="0" failed="0" warnings="2" ></Summary>
+<NodeArgs eType="StartAction" icon="4" nRep="7" status="Warning" >
+<Disp><![CDATA[Action1 Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="6" status="Warning" >
+<Disp><![CDATA[QLDACN_XemDSXL Iteration 1 (Row 1)]]></Disp>
+</NodeArgs>
+</DIter>
+<Summary sTime="7/2/2018 - 15:07:01" eTime="7/2/2018 - 15:08:56" passed="0" failed="0" warnings="2" ></Summary>
+<NodeArgs eType="StartTest" icon="1" nRep="3" status="Warning" >
+<Disp><![CDATA[Test QLDACN_XemDSXL Summary]]></Disp>
+</NodeArgs>
+</Doc>
+</Report>
