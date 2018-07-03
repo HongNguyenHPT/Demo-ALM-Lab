@@ -1,0 +1,19 @@
+﻿Browser("HPE Service Manager: Login").Page("HPE Service Manager: Login").WebEdit("Username").Set "Leader2" @@ hightlight id_;_Browser("HPE Service Manager: Login").Page("HPE Service Manager: Login").WebEdit("Username")_;_script infofile_;_ZIP::ssf1.xml_;_
+Browser("HPE Service Manager: Login").Page("HPE Service Manager: Login").WebEdit("Password").SetSecure "5b39e48790a797509780193348984fb1b3a7c5599388" @@ hightlight id_;_Browser("HPE Service Manager: Login").Page("HPE Service Manager: Login").WebEdit("Password")_;_script infofile_;_ZIP::ssf2.xml_;_
+Browser("HPE Service Manager: Login").Page("HPE Service Manager: Login").WebButton("Log In").Click @@ hightlight id_;_Browser("HPE Service Manager: Login").Page("HPE Service Manager: Login").WebButton("Log In")_;_script infofile_;_ZIP::ssf3.xml_;_
+Browser("HPE Service Manager").Page("HPE Service Manager").WebElement("ext-gen-top119").Click @@ hightlight id_;_Browser("HPE Service Manager").Page("HPE Service Manager").WebElement("ext-gen-top119")_;_script infofile_;_ZIP::ssf4.xml_;_
+Browser("HPE Service Manager").Page("HPE Service Manager").Link("Hỗ Trợ Xử Lý Các Yêu Cầu").Click @@ hightlight id_;_Browser("HPE Service Manager").Page("HPE Service Manager").Link("Hỗ Trợ Xử Lý Các Yêu Cầu")_;_script infofile_;_ZIP::ssf5.xml_;_
+Browser("HPE Service Manager").Page("HPE Service Manager").Link("Các Yêu Cầu Đang Xử Lý").Click @@ hightlight id_;_Browser("HPE Service Manager").Page("HPE Service Manager").Link("Các Yêu Cầu Đang Xử Lý")_;_script infofile_;_ZIP::ssf6.xml_;_
+Browser("HPE Service Manager").Page("HPE Service Manager").Frame("mif-comp-ext-gen-top50-262244").Link("S180607-930").Click @@ hightlight id_;_Browser("HPE Service Manager").Page("HPE Service Manager").Frame("mif-comp-ext-gen-top50-262244").Link("S180607-930")_;_script infofile_;_ZIP::ssf7.xml_;_
+'Browser("HPE Service Manager").Page("HPE Service Manager").Frame("mif-comp-ext-gen-top50-687017").WebElement("S180607-930").Click
+Browser("HPE Service Manager").Page("HPE Service Manager").Frame("mif-comp-ext-gen-top50-262244").WebButton("Cập Nhật").Click @@ hightlight id_;_Browser("HPE Service Manager").Page("HPE Service Manager").Frame("mif-comp-ext-gen-top50-262244").WebButton("Cập Nhật")_;_script infofile_;_ZIP::ssf8.xml_;_
+Browser("HPE Service Manager").Page("HPE Service Manager").Frame("mif-comp-ext-gen-top50-262244").WebElement("X33View").Click @@ hightlight id_;_Browser("HPE Service Manager").Page("HPE Service Manager").Frame("mif-comp-ext-gen-top50-262244").WebElement("X33View")_;_script infofile_;_ZIP::ssf9.xml_;_
+Browser("HPE Service Manager").Page("HPE Service Manager").Frame("mif-comp-ext-gen-top50-262244").WebEdit("var/update.action/update.actio").Set "ổ sung thông tin" @@ hightlight id_;_Browser("HPE Service Manager").Page("HPE Service Manager").Frame("mif-comp-ext-gen-top50-262244").WebEdit("var/update.action/update.actio")_;_script infofile_;_ZIP::ssf10.xml_;_
+Browser("HPE Service Manager").Page("HPE Service Manager").Frame("mif-comp-ext-gen-top50-262244").WebButton("Lưu & Thoát").Click @@ hightlight id_;_Browser("HPE Service Manager").Page("HPE Service Manager").Frame("mif-comp-ext-gen-top50-262244").WebButton("Lưu & Thoát")_;_script infofile_;_ZIP::ssf11.xml_;_
+Browser("HPE Service Manager").Page("HPE Service Manager").Frame("mif-comp-ext-gen-top50-262244").WebButton("Thoát Ra").Click @@ hightlight id_;_Browser("HPE Service Manager").Page("HPE Service Manager").Frame("mif-comp-ext-gen-top50-262244").WebButton("Thoát Ra")_;_script infofile_;_ZIP::ssf12.xml_;_
+Browser("HPE Service Manager").Page("HPE Service Manager").Sync @@ hightlight id_;_Browser("HPE Service Manager").Page("HPE Service Manager")_;_script infofile_;_ZIP::ssf13.xml_;_
+Browser("HPE Service Manager").CloseAllTabs
+
+
+'Browser("HPE Service Manager").Page("HPE Service Manager").Frame("mif-comp-ext-gen-top50-687017").WebElement("S180607-930").Click
+
