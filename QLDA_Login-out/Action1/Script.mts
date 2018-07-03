@@ -7,7 +7,6 @@ Browser("HPE Service Manager: Login_2").Page("HPE Service Manager: Login").WebBu
 
 Browser("HPE Service Manager").Page("HPE Service Manager").WebButton("User Information").Click @@ hightlight id_;_Browser("HPE Service Manager").Page("HPE Service Manager").WebButton("User Information")_;_script infofile_;_ZIP::ssf16.xml_;_
 Browser("HPE Service Manager").Page("HPE Service Manager").WebButton("Logout").Click @@ hightlight id_;_Browser("HPE Service Manager").Page("HPE Service Manager").WebButton("Logout")_;_script infofile_;_ZIP::ssf17.xml_;_
-Browser("HPE Service Manager").Dialog("Message from webpage").WinButton("OK").Click @@ hightlight id_;_199568_;_script infofile_;_ZIP::ssf18.xml_;_
-
+Browser("HPE Service Manager").Dialog("Message from webpage").WinButton("OK").Click
 
 Window("Internet Explorer_2").Close
