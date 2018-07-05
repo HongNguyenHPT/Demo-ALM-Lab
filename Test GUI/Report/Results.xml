@@ -134,7 +134,7 @@
 <DName><![CDATA[Test GUI]]></DName>
 <Res><![CDATA[Test GUI]]></Res>
 <DT rID="T2">
-<NodeArgs eType="Table" icon="2" nRep="4" filter="False" >
+<NodeArgs eType="Table" icon="73" nRep="4" filter="False" >
 <Disp><![CDATA[Run-Time Data Table]]></Disp>
 <BtmPane vType="Table" >
 <Path><![CDATA[Default.xls]]></Path>
@@ -147,185 +147,320 @@
 <Step rID="T5">
 <Obj plainTxt="False" ><![CDATA[SystemUtil]]></Obj>
 <Details plainTxt="False" ><![CDATA[SystemUtil]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:22]]></Time>
-<TimeTick>1528963822</TimeTick>
+<Time><![CDATA[7/4/2018 - 10:23:24]]></Time>
+<TimeTick>1530674604</TimeTick>
 <Step rID="T6">
 <Obj plainTxt="False" ><![CDATA[Run "C:\Program Files (x86)\HP\Unified Functional Testing\samples\Flights Application\FlightsGUI.exe",1]]></Obj>
 <Details plainTxt="False" ><![CDATA[Run "C:\Program Files (x86)\HP\Unified Functional Testing\samples\Flights Application\FlightsGUI.exe",1]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:22]]></Time>
-<TimeTick>1528963822</TimeTick>
-<NodeArgs eType="Replay" icon="5" nRep="11" status="Passed" Source="Action1" SourceLine="-1" >
+<Time><![CDATA[7/4/2018 - 10:23:24]]></Time>
+<TimeTick>1530674604</TimeTick>
+<NodeArgs eType="Replay" icon="76" nRep="11" status="Passed" Source="Action1" SourceLine="-1" >
 <Disp><![CDATA[Run "C:\Program Files (x86)\HP\Unified Functional Testing\samples\Flights Application\FlightsGUI.exe",1]]></Disp>
 </NodeArgs>
 </Step>
-<NodeArgs eType="Replay" icon="5" nRep="10" status="Passed" Source="Action1" SourceLine="-1" >
+<NodeArgs eType="Replay" icon="76" nRep="10" status="Passed" Source="Action1" SourceLine="-1" >
 <Disp><![CDATA[SystemUtil]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T7">
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio]]></Obj>
+<Details plainTxt="False" ><![CDATA[WpfWindow]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:42]]></Time>
+<TimeTick>1530674682</TimeTick>
+<Step rID="T8">
 <Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (4): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfEdit(&quot;agentName&quot;).Set &quot;john&quot;&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:22]]></Time>
-<TimeTick>1528963822</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="12" status="Failed" Source="Action1" SourceLine="3" >
+<Details plainTxt="False" ><![CDATA[The &quot;agentName&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (4): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfEdit(&quot;agentName&quot;).Set &quot;john&quot;&quot;. ]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:42]]></Time>
+<TimeTick>1530674682</TimeTick>
+<NodeArgs eType="Replay" icon="78" nRep="13" status="Failed" Source="Action1" SourceLine="3" >
 <Disp><![CDATA[Run Error]]></Disp>
 </NodeArgs>
 </Step>
-<Step rID="T8">
-<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (5): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfEdit(&quot;password&quot;).SetSecure &quot;5b067a79b206b2b3ba2c&quot;&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:22]]></Time>
-<TimeTick>1528963822</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="13" status="Failed" Source="Action1" SourceLine="4" >
-<Disp><![CDATA[Run Error]]></Disp>
+<NodeArgs eType="Context" icon="77" nRep="12" status="Failed" Source="Action1" SourceLine="3" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T9">
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio]]></Obj>
+<Details plainTxt="False" ><![CDATA[WpfWindow]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:42]]></Time>
+<TimeTick>1530674682</TimeTick>
+<Step rID="T10">
 <Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (8): &quot;name = (WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfEdit(&quot;agentName&quot;).GetROProperty(&quot;text&quot;))&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:22]]></Time>
-<TimeTick>1528963822</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="14" status="Failed" Source="Action1" SourceLine="7" >
+<Details plainTxt="False" ><![CDATA[The &quot;password&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (5): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfEdit(&quot;password&quot;).SetSecure &quot;5b067a79b206b2b3ba2c&quot;&quot;. ]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:42]]></Time>
+<TimeTick>1530674682</TimeTick>
+<NodeArgs eType="Replay" icon="78" nRep="15" status="Failed" Source="Action1" SourceLine="4" >
 <Disp><![CDATA[Run Error]]></Disp>
 </NodeArgs>
 </Step>
-<Step rID="T10">
-<Obj ><![CDATA[Check độ dài Username]]></Obj>
-<Details ><![CDATA[Username  dài 0 kí tự]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:22]]></Time>
-<TimeTick>1528963822</TimeTick>
-<NodeArgs eType="User" icon="7" nRep="15" status="Failed" Source="Action1" SourceLine="7" >
-<Disp><![CDATA[Check độ dài Username]]></Disp>
+<NodeArgs eType="Context" icon="77" nRep="14" status="Failed" Source="Action1" SourceLine="4" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T11">
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio]]></Obj>
+<Details plainTxt="False" ><![CDATA[WpfWindow]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:42]]></Time>
+<TimeTick>1530674682</TimeTick>
+<Step rID="T12">
 <Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (19): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfButton(&quot;OK&quot;).Click&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:22]]></Time>
-<TimeTick>1528963822</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="16" status="Failed" Source="Action1" SourceLine="18" >
+<Details plainTxt="False" ><![CDATA[The &quot;agentName&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (8): &quot;name = (WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfEdit(&quot;agentName&quot;).GetROProperty(&quot;text&quot;))&quot;. ]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:42]]></Time>
+<TimeTick>1530674682</TimeTick>
+<NodeArgs eType="Replay" icon="78" nRep="17" status="Failed" Source="Action1" SourceLine="7" >
 <Disp><![CDATA[Run Error]]></Disp>
 </NodeArgs>
 </Step>
-<Step rID="T12">
-<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (22): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfButton(&quot;FIND FLIGHTS&quot;).Click&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:22]]></Time>
-<TimeTick>1528963822</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="17" status="Failed" Source="Action1" SourceLine="21" >
-<Disp><![CDATA[Run Error]]></Disp>
+<NodeArgs eType="Context" icon="77" nRep="16" status="Failed" Source="Action1" SourceLine="7" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T13">
-<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (23): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfTable(&quot;flightsDataGrid&quot;).SelectCell 4,0&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:22]]></Time>
-<TimeTick>1528963822</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="18" status="Failed" Source="Action1" SourceLine="22" >
-<Disp><![CDATA[Run Error]]></Disp>
+<Obj ><![CDATA[Check độ dài Username]]></Obj>
+<Details ><![CDATA[Username  dài 0 kí tự]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:43]]></Time>
+<TimeTick>1530674683</TimeTick>
+<NodeArgs eType="User" icon="79" nRep="18" status="Failed" Source="Action1" SourceLine="7" >
+<Disp><![CDATA[Check độ dài Username]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T14">
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio]]></Obj>
+<Details plainTxt="False" ><![CDATA[WpfWindow]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:43]]></Time>
+<TimeTick>1530674683</TimeTick>
+<Step rID="T15">
 <Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (24): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfButton(&quot;SELECT FLIGHT&quot;).Click&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:23]]></Time>
-<TimeTick>1528963823</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="19" status="Failed" Source="Action1" SourceLine="23" >
+<Details plainTxt="False" ><![CDATA[The &quot;OK&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (19): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfButton(&quot;OK&quot;).Click&quot;. ]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:43]]></Time>
+<TimeTick>1530674683</TimeTick>
+<NodeArgs eType="Replay" icon="78" nRep="20" status="Failed" Source="Action1" SourceLine="18" >
 <Disp><![CDATA[Run Error]]></Disp>
 </NodeArgs>
 </Step>
-<Step rID="T15">
-<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (25): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfEdit(&quot;passengerName&quot;).Set DataTable(&quot;PassengerName&quot;, dtGlobalSheet)&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:23]]></Time>
-<TimeTick>1528963823</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="20" status="Failed" Source="Action1" SourceLine="24" >
-<Disp><![CDATA[Run Error]]></Disp>
+<NodeArgs eType="Context" icon="77" nRep="19" status="Failed" Source="Action1" SourceLine="18" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T16">
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio]]></Obj>
+<Details plainTxt="False" ><![CDATA[WpfWindow]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:43]]></Time>
+<TimeTick>1530674683</TimeTick>
+<Step rID="T17">
 <Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (26): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfButton(&quot;ORDER&quot;).Click&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:23]]></Time>
-<TimeTick>1528963823</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="21" status="Failed" Source="Action1" SourceLine="25" >
+<Details plainTxt="False" ><![CDATA[The &quot;FIND FLIGHTS&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (22): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfButton(&quot;FIND FLIGHTS&quot;).Click&quot;. ]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:43]]></Time>
+<TimeTick>1530674683</TimeTick>
+<NodeArgs eType="Replay" icon="78" nRep="22" status="Failed" Source="Action1" SourceLine="21" >
 <Disp><![CDATA[Run Error]]></Disp>
 </NodeArgs>
 </Step>
-<Step rID="T17">
-<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (30): &quot;order_mes = (WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfObject(&quot;Order 89 completed&quot;).GetROProperty(&quot;text&quot;))&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:28]]></Time>
-<TimeTick>1528963828</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="22" status="Failed" Source="Action1" SourceLine="29" >
-<Disp><![CDATA[Run Error]]></Disp>
+<NodeArgs eType="Context" icon="77" nRep="21" status="Failed" Source="Action1" SourceLine="21" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T18">
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio]]></Obj>
+<Details plainTxt="False" ><![CDATA[WpfWindow]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:43]]></Time>
+<TimeTick>1530674683</TimeTick>
+<Step rID="T19">
 <Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (42): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfButton(&quot;NEW SEARCH&quot;).Click&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:28]]></Time>
-<TimeTick>1528963828</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="23" status="Failed" Source="Action1" SourceLine="41" >
+<Details plainTxt="False" ><![CDATA[The &quot;flightsDataGrid&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (23): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfTable(&quot;flightsDataGrid&quot;).SelectCell 4,0&quot;. ]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:43]]></Time>
+<TimeTick>1530674683</TimeTick>
+<NodeArgs eType="Replay" icon="78" nRep="24" status="Failed" Source="Action1" SourceLine="22" >
 <Disp><![CDATA[Run Error]]></Disp>
 </NodeArgs>
 </Step>
-<Step rID="T19">
-<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (43): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfTabStrip(&quot;WpfTabStrip&quot;).Select &quot;SEARCH ORDER&quot;&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:28]]></Time>
-<TimeTick>1528963828</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="24" status="Failed" Source="Action1" SourceLine="42" >
-<Disp><![CDATA[Run Error]]></Disp>
+<NodeArgs eType="Context" icon="77" nRep="23" status="Failed" Source="Action1" SourceLine="22" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T20">
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio]]></Obj>
+<Details plainTxt="False" ><![CDATA[WpfWindow]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:43]]></Time>
+<TimeTick>1530674683</TimeTick>
+<Step rID="T21">
 <Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (44): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfRadioButton(&quot;byNumberRadio&quot;).Set&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:28]]></Time>
-<TimeTick>1528963828</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="25" status="Failed" Source="Action1" SourceLine="43" >
+<Details plainTxt="False" ><![CDATA[The &quot;SELECT FLIGHT&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (24): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfButton(&quot;SELECT FLIGHT&quot;).Click&quot;. ]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:43]]></Time>
+<TimeTick>1530674683</TimeTick>
+<NodeArgs eType="Replay" icon="78" nRep="26" status="Failed" Source="Action1" SourceLine="23" >
 <Disp><![CDATA[Run Error]]></Disp>
 </NodeArgs>
 </Step>
-<Step rID="T21">
-<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (45): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfEdit(&quot;byNumberWatermark&quot;).Set order_num&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:28]]></Time>
-<TimeTick>1528963828</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="26" status="Failed" Source="Action1" SourceLine="44" >
-<Disp><![CDATA[Run Error]]></Disp>
+<NodeArgs eType="Context" icon="77" nRep="25" status="Failed" Source="Action1" SourceLine="23" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T22">
-<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (46): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfButton(&quot;SEARCH&quot;).Click&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:28]]></Time>
-<TimeTick>1528963828</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="27" status="Failed" Source="Action1" SourceLine="45" >
-<Disp><![CDATA[Run Error]]></Disp>
-</NodeArgs>
-</Step>
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio]]></Obj>
+<Details plainTxt="False" ><![CDATA[WpfWindow]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:43]]></Time>
+<TimeTick>1530674683</TimeTick>
 <Step rID="T23">
 <Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
-<Details plainTxt="False" ><![CDATA[The &quot;HPE MyFlight Sample Applicatio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (50): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).Close&quot;. ]]></Details>
-<Time><![CDATA[6/14/2018 - 15:10:28]]></Time>
-<TimeTick>1528963828</TimeTick>
-<NodeArgs eType="Replay" icon="6" nRep="28" status="Failed" Source="Action1" SourceLine="49" >
+<Details plainTxt="False" ><![CDATA[The &quot;passengerName&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (25): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfEdit(&quot;passengerName&quot;).Set DataTable(&quot;PassengerName&quot;, dtGlobalSheet)&quot;. ]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:43]]></Time>
+<TimeTick>1530674683</TimeTick>
+<NodeArgs eType="Replay" icon="78" nRep="28" status="Failed" Source="Action1" SourceLine="24" >
 <Disp><![CDATA[Run Error]]></Disp>
 </NodeArgs>
 </Step>
-<Summary sTime="6/14/2018 - 15:10:21" eTime="6/14/2018 - 15:10:28" passed="1" failed="17" warnings="0" ></Summary>
-<NodeArgs eType="StartAction" icon="4" nRep="7" status="Failed" >
+<NodeArgs eType="Context" icon="77" nRep="27" status="Failed" Source="Action1" SourceLine="24" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T24">
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio]]></Obj>
+<Details plainTxt="False" ><![CDATA[WpfWindow]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:43]]></Time>
+<TimeTick>1530674683</TimeTick>
+<Step rID="T25">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[The &quot;ORDER&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (26): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfButton(&quot;ORDER&quot;).Click&quot;. ]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:43]]></Time>
+<TimeTick>1530674683</TimeTick>
+<NodeArgs eType="Replay" icon="78" nRep="30" status="Failed" Source="Action1" SourceLine="25" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="77" nRep="29" status="Failed" Source="Action1" SourceLine="25" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T26">
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio]]></Obj>
+<Details plainTxt="False" ><![CDATA[WpfWindow]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:48]]></Time>
+<TimeTick>1530674688</TimeTick>
+<Step rID="T27">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[The &quot;Order 89 completed&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (30): &quot;order_mes = (WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfObject(&quot;Order 89 completed&quot;).GetROProperty(&quot;text&quot;))&quot;. ]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:48]]></Time>
+<TimeTick>1530674688</TimeTick>
+<NodeArgs eType="Replay" icon="78" nRep="32" status="Failed" Source="Action1" SourceLine="29" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="77" nRep="31" status="Failed" Source="Action1" SourceLine="29" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T28">
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio]]></Obj>
+<Details plainTxt="False" ><![CDATA[WpfWindow]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:49]]></Time>
+<TimeTick>1530674689</TimeTick>
+<Step rID="T29">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[The &quot;NEW SEARCH&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (42): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfButton(&quot;NEW SEARCH&quot;).Click&quot;. ]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:49]]></Time>
+<TimeTick>1530674689</TimeTick>
+<NodeArgs eType="Replay" icon="78" nRep="34" status="Failed" Source="Action1" SourceLine="41" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="77" nRep="33" status="Failed" Source="Action1" SourceLine="41" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T30">
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio]]></Obj>
+<Details plainTxt="False" ><![CDATA[WpfWindow]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:49]]></Time>
+<TimeTick>1530674689</TimeTick>
+<Step rID="T31">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[The &quot;WpfTabStrip&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (43): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfTabStrip(&quot;WpfTabStrip&quot;).Select &quot;SEARCH ORDER&quot;&quot;. ]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:49]]></Time>
+<TimeTick>1530674689</TimeTick>
+<NodeArgs eType="Replay" icon="78" nRep="36" status="Failed" Source="Action1" SourceLine="42" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="77" nRep="35" status="Failed" Source="Action1" SourceLine="42" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T32">
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio]]></Obj>
+<Details plainTxt="False" ><![CDATA[WpfWindow]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:49]]></Time>
+<TimeTick>1530674689</TimeTick>
+<Step rID="T33">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[The &quot;byNumberRadio&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (44): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfRadioButton(&quot;byNumberRadio&quot;).Set&quot;. ]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:49]]></Time>
+<TimeTick>1530674689</TimeTick>
+<NodeArgs eType="Replay" icon="78" nRep="38" status="Failed" Source="Action1" SourceLine="43" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="77" nRep="37" status="Failed" Source="Action1" SourceLine="43" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T34">
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio]]></Obj>
+<Details plainTxt="False" ><![CDATA[WpfWindow]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:49]]></Time>
+<TimeTick>1530674689</TimeTick>
+<Step rID="T35">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[The &quot;byNumberWatermark&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (45): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfEdit(&quot;byNumberWatermark&quot;).Set order_num&quot;. ]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:49]]></Time>
+<TimeTick>1530674689</TimeTick>
+<NodeArgs eType="Replay" icon="78" nRep="40" status="Failed" Source="Action1" SourceLine="44" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="77" nRep="39" status="Failed" Source="Action1" SourceLine="44" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T36">
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio]]></Obj>
+<Details plainTxt="False" ><![CDATA[WpfWindow]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:49]]></Time>
+<TimeTick>1530674689</TimeTick>
+<Step rID="T37">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[The &quot;SEARCH&quot;  object was not found in the Object Repository.<BR/>Check the Object Repository to confirm that the object exists or to find the correct name for the object.<BR/>Line (46): &quot;WpfWindow(&quot;HPE MyFlight Sample Applicatio&quot;).WpfButton(&quot;SEARCH&quot;).Click&quot;. ]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:49]]></Time>
+<TimeTick>1530674689</TimeTick>
+<NodeArgs eType="Replay" icon="78" nRep="42" status="Failed" Source="Action1" SourceLine="45" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T38">
+<Obj plainTxt="False" ><![CDATA[HPE MyFlight Sample Applicatio.Close]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[7/4/2018 - 10:24:51]]></Time>
+<TimeTick>1530674691</TimeTick>
+<NodeArgs eType="Replay" icon="77" nRep="44" Source="Action1" SourceLine="45" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio.Close]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="77" nRep="41" status="Failed" Source="Action1" SourceLine="45" >
+<Disp><![CDATA[HPE MyFlight Sample Applicatio]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="7/4/2018 - 10:23:16" eTime="7/4/2018 - 10:24:51" passed="1" failed="16" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="75" nRep="7" status="Failed" >
 <Disp><![CDATA[Action1 Summary]]></Disp>
 </NodeArgs>
 </Action>
-<NodeArgs eType="StartIteration" icon="3" nRep="6" status="Failed" >
+<NodeArgs eType="StartIteration" icon="74" nRep="6" status="Failed" >
 <Disp><![CDATA[Test GUI Iteration 1 (Row 1)]]></Disp>
 </NodeArgs>
 </DIter>
-<Summary sTime="6/14/2018 - 15:10:20" eTime="6/14/2018 - 15:10:28" passed="1" failed="17" warnings="0" ></Summary>
-<NodeArgs eType="StartTest" icon="1" nRep="3" status="Failed" >
+<Summary sTime="7/4/2018 - 10:23:15" eTime="7/4/2018 - 10:24:51" passed="1" failed="16" warnings="0" ></Summary>
+<NodeArgs eType="StartTest" icon="72" nRep="3" status="Failed" >
 <Disp><![CDATA[Test Test GUI Summary]]></Disp>
 </NodeArgs>
 </Doc>

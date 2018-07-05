@@ -28,15 +28,11 @@ WpfWindow("HPE MyFlight Sample Applicatio").WpfButton("ORDER").Click
 wait (5)
 '---Lấy thông tin số Order number 
 order_mes = (WpfWindow("HPE MyFlight Sample Applicatio").WpfObject("Order 89 completed").GetROProperty("text"))
-'MsgBox(order_mes)
 
 b = Replace(order_mes, "Order", "")
-'MsgBox b
 c = Replace(b, "completed", "")
-'MsgBox c
 
 order_num = Trim(c)
-'MsgBox order_num
 
 '--Search flight
 WpfWindow("HPE MyFlight Sample Applicatio").WpfButton("NEW SEARCH").Click
