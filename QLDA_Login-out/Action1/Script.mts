@@ -1,4 +1,4 @@
-﻿'-------------
+﻿'----Login-----
 
 Browser("HPE Service Manager: Login_2").Page("HPE Service Manager: Login").WebEdit("Username").Set "tpqlb" @@ hightlight id_;_Browser("HPE Service Manager: Login 2").Page("HPE Service Manager: Login").WebEdit("Username")_;_script infofile_;_ZIP::ssf13.xml_;_
 Browser("HPE Service Manager: Login_2").Page("HPE Service Manager: Login").WebEdit("Password").SetSecure "5b3af1ee64c50f2c5838f6fdf6378c9f23ef8ee420ce" @@ hightlight id_;_Browser("HPE Service Manager: Login 2").Page("HPE Service Manager: Login").WebEdit("Password")_;_script infofile_;_ZIP::ssf14.xml_;_
