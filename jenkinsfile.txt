@@ -9,7 +9,7 @@ pipeline {
         stage('Test'){
             steps {
                 sh 'make check'
-                uft 'TC1_Test Register' 
+                uft 'D:\ALM Octane Demo\Test Web GUI' 
             }
         }
         stage('Deploy') {
