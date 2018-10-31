@@ -7,11 +7,9 @@ pipeline {
                 //sh 'make' (1)
                 uftScenarioLoad archiveTestResultsMode: 'ALWAYS_ARCHIVE_TEST_REPORT', fsUftRunMode: 'Normal', testPaths: '''D:\\ALM Octane Demo\\Test Web GUI'''
             }
+            
         }
        
-    }
-    
-    stages {
         stage('Test') {
             steps {
                 //sh 'make' (1)
@@ -19,4 +17,6 @@ pipeline {
             }
         }
     }
+    
+   
 }
